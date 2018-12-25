@@ -1,0 +1,139 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+p{
+	padding: 15px 0;
+}
+.head{
+	height: auto;
+	margin:0 150px;
+	background: #fff;
+	overflow:hidden;
+}
+.head .logo{
+	margin-top: 30px;
+	padding-bottom: 20px;
+	border-bottom: solid rgba(211,211,211,0.5) 3px;
+	margin-bottom: 7px;
+
+}
+
+.menu ul{
+	height: 60px;
+	margin-left: 0px;
+	
+}
+
+.menu li{
+	margin-right: 30px;
+	/*是用来float就不用设置display了，至少在这里不用*/
+	float: left; 
+	list-style-type: none;
+	font-family: "微软雅黑";
+	color: #7D7D7D;
+	font-size: 15px;
+	line-height: 50px;
+	height: 50px;
+	font-weight: bold;	
+}
+.banner img{
+	width: 100%;
+}
+
+.main{
+	margin:20px 150px;
+}
+.main article{
+	background: #fff;
+	padding: 10px;
+	width: 750px;
+	height: auto;
+	margin-left: 0px;
+	float: left;
+	/*文章内容对齐方式*/
+	text-align: justify;
+	/*行间距*/
+	line-height: 30px;
+}
+
+article h1{
+	/*橙色*/
+	color: #FFA500;
+	line-height: 40px;
+	height: 40px;
+	font: bold 2em "微软雅黑";
+	margin: 20px 0 10px;
+	text-align: center;
+}
+
+p.info{
+	font-size:0.8em;
+	color: #c0c0c0;
+	/*增加段落间距*/
+	padding:2em;
+	border-bottom:2px solid;
+}
+
+
+p.author{
+	margin-top:2.5em;
+	margin-bottom: 2.5em;
+}
+
+.indent{
+	/*首行缩进*/
+	text-indent: 2em;
+}
+.list-indent{
+	/*列表缩进*/
+	margin-left: 2em;
+	margin-top:-15px;
+}
+
+.aside{
+	background: #fff;
+	width: 400px;
+	float: right;
+	margin-bottom:30px;
+	margin-right: 0;
+	text-align: center;
+}
+
+.aside img{
+	width:395px;
+	margin-bottom: 10px;
+}
+.aside h4,p{
+	text-align: left;
+}
+.aside h4{
+	color:red;
+}
+
+.footer{
+	clear:both;
+	margin-top:50px;
+	background: red;
+	height: 100px;
+	color:white;
+	font-size:1.5em;	
+}
+
+.footer p{
+	/*最后条框与地面好像还有一段距离*/
+	padding-top: 30px;
+	text-align: center;
+}
+
+.info p{
+	color: rgba(0,0,0,0.5);
+	font-size: 5px;
+}
+
+
+
+
+
+
