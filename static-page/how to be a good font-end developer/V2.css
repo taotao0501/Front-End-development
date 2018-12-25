@@ -141,9 +141,11 @@ aside p {
 	padding:0;
 }
 
+.clear {
+	clear:both;
+}
 footer {
 	width:100%;
-	clear:both;
 	margin-top:50px;
 	background: red;
 	height: 100px;
