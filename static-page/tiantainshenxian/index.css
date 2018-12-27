@@ -1,0 +1,436 @@
+*{
+margin:0;
+padding:0;
+}
+
+/* 2.列表小圆点格式化 */
+ul,ol{
+list-style: none;
+}
+
+/* 3. a下划线删除 */
+a{
+text-decoration:none;
+}
+
+/* 4. 伪类 */
+.clearfix:before, .clearfix:after{
+content: "";
+display: table;
+}
+
+.clearfix:after{
+clear: both;
+}
+
+.clearfix{
+zoom:1;
+}
+
+/* 5.浮动 */
+.rf{
+float:right;
+}
+
+.lf{
+float:left;
+}
+
+/* 6.标题标签 */
+h1,h2,h3,h4,h5,h6{
+font-size:100%;
+font-weight:normal;
+}
+
+/* 7.input */
+input{
+outline:none;
+border:0;
+}
+/*默认格式*/
+body {
+	font-size:12px;
+	color:#666666;
+}
+
+/* 1.login最外侧盒子设定 高29 背景颜色#f7f7f7 下边框1 */
+.login {
+	height:29px;
+	background: #f7f7f7;
+	border-bottom:1px;
+}
+/* 1.1 login内容部分设置 高29 宽1200 居中*/
+.loginbox {
+	height:29px;
+	width:1200px;
+	margin:0 auto;
+}
+/* 1.11左侧欢迎栏设置 居中 注意浮动 */
+.loginbox h4 {
+	height:29px;
+	line-height: 29px;
+	float:left;
+}
+/* 1.12右侧我的订单设置 宽290 高29 居中 注意浮动 */
+.loginrg {
+	float:right;
+	height:29px;
+	line-height:29px;
+	width:290px;
+}
+/* 1.12登录与未登录设置隐藏 注意浮动*/
+/*在这里要注意不能写 myLogin { float:right} 否则会导致myLogin被挤下去的*/
+.inlogin {
+	float:left;
+}
+
+.unlogin {
+	display: none;
+}
+
+/* 1.121已经登录设置 a颜色orange */
+.inlogin a {
+	color:orange;
+}
+
+.unlogin span, .myLogin span {
+	margin:0 10px;
+}
+
+/* 1.122未登录设置 span左右间距 a 鼠标点击变颜色; */
+.unlogin a:hover, .myLogin a:hover {
+	color:orange;
+}
+
+
+
+/* 2.search部分设置 宽默认 高90 */
+.search {
+	height:90px;
+}
+/* 内部内容盒子设置 宽1200 高90 居中 背景颜色主要测试用*/
+.searcher {
+	width:1200px;
+	height:90px;
+	margin:0 auto;
+}
+/* background: palegreen; */
+/* 2.1左侧logo设置 位置 上29 左17 */
+.logo {
+	float:left;
+	margin-top:29px;
+	margin-left:17px;
+}
+/* 注：浮动或者转化行内块元素，一般浮动为主 */
+
+/* 2.2搜索框设置 宽616 高38 边框 位置左120 上36 浮动 */
+.searchBox {
+	float:left;
+	width:616px;
+	height:38px;
+	border:1px solid #0f0;
+	margin-left:120px;
+	margin-top:36px;
+}
+/* 注：出问题找浮动 */
+/* 搜索框搜索栏设置 宽516 高38 居中 背景图 缩进40 */
+.searchBox input.text {
+	width:516px;
+	height:38px;
+	line-height:38px;
+	background: url(images/search.png) no-repeat 12px 9px;
+	text-indent:40px;
+}
+/* 搜索框搜索按钮设置 宽100 高39 背景颜色 字白 14 行高38居中 浮动*/
+input.sub {
+	width:100px;
+	height:39px;
+	background: #0f0;
+	font:14px #fff;
+	line-height:38px;
+	float:right;
+}
+/* 2.3右侧购物车 宽200 高40 右浮动 位置上36 */
+.buyCart {
+	width:200px;
+	height:40px;
+	float:right;
+	margin-top:36px;
+	border:1px solid;
+}
+ /*background-color: red;*/
+ /*设置a 宽158 高38 居中 背景图 字14颜色 缩进56 */
+ .buyCart a {
+ 	float:left;
+ 	width:158px;
+ 	height:38px;
+ 	line-height:38px;
+ 	background:url(images/buycar.png) no-repeat 12px 9px;
+ 	text-indent:56px;
+ }
+/* 因为要给行内元素设置宽高 改变类型 
+/* background: purple; */
+/* 设置span 宽40 高40 背景颜色 字18 白 居中 */
+.buyCart span {
+	float:right;
+	width:40px;
+	height:40px;
+	background: orange;
+	color: #fff;
+	line-height:40px;
+	text-align: center;
+	font-size: 30px
+}
+
+/* 3.全部商品分类最外侧 高40 上26 边框2 #37ab40 */
+.cate {
+	height:40px;
+	margin-top:26px;
+	border-bottom:2px solid #37ab40;	
+}
+
+/* 内容设置 宽1200 高40 居中 */
+.catecon {
+	width:1200px;
+	height: 40px;
+	margin:0 auto;
+}
+/* 3.1全部商品分类 宽200高40 居中 字14 白背景色 浮动 */
+.all {
+	width:200px;
+	height:40px;
+	line-height: 40px;
+	font-size: 14px;
+	background: #37ab40;
+	color:white;
+	float:left;
+	text-align: center;
+}
+/* 设置浮动主要是给首页list找边界 */
+/* 3.2首页设置 宽215高40 左35 上下居中 */
+.catelist {
+	float:left;
+	width: 215px;
+	height:40px;
+	margin-left:35px;
+	line-height: 40px;
+}
+/* 注：有问题找浮动 */
+/* 设置li 字14 横排一行浮动 */
+.catelist li {
+	font-size: 12px;
+	float:left;
+	margin:0 10px;
+}
+/* span a 标签设置 左右20 字体颜色 */
+.catelist a {
+	color:#666666;
+}
+
+/*4.slide部分*/
+.slide {
+	height: 270px;
+}
+
+.slidepic {
+	width:1200px;
+	height:270px;
+	margin:0 auto;
+}
+
+.fruits {
+	float:left;
+	height:270px;	
+	width:200px;
+}
+/*雪碧图搞不懂啊，太难了！我去*/
+.fruits li {
+	width:198;
+	border:1px solid #f7f7f7;
+	height:44px;
+	border-top:0;
+	line-height: 44px;
+	text-align:center;
+	font-size:14px;
+	background: url(images/sprite.png) no-repeat 33px 9px;
+}
+
+.fruits li:nth-child(2){
+	background-position-y: -41px;
+}
+.fruits li:nth-child(3){
+	background-position-y: -91px;
+}
+.fruits li:nth-child(4){
+	background-position-y: -141px;
+}
+
+.fruits li:nth-child(5){
+	background-position-y: -191px;
+}
+.fruits li:nth-child(6){
+	background-position-y: -241px;
+}
+
+.fruits a {
+	font-size:14px;
+	background: url(images/sprite.png) no-repeat 170px -291px;
+	float:right;
+	width:198px;
+	height:44px;
+}
+/*雪碧图到此结束，雪碧图的出现是为了增强页面响应的速度和效率*/
+.mid-pic {
+	height:279px;
+	width:760px;
+	float:left;
+	position:relative;
+	overflow:hidden;	
+}
+
+.slist {
+	width:3040px;
+	height:270px;
+}
+
+.slist li {
+	float:left;
+}
+
+.lfbut {
+	/*这里的0px单位不可省略*/
+	background:url(images/sprite.png) no-repeat 0px -350px;
+	position:absolute;
+	width:25px;
+	height:25px;
+	left:12px;
+	top:122.5px;	
+	cursor:pointer;
+}
+
+.rgbut {
+	background:url(images/sprite.png) no-repeat 0px -400px;
+	position:absolute;
+	width:25px;
+	height:25px;
+	right:12px;
+	top:122.5px;	
+	cursor:pointer;
+}
+
+.rd {
+	height:11px;
+	width:760px;
+	bottom:19px;
+	left:0;
+	position:absolute;
+	text-align:center;
+}
+
+.rd li {
+	display:inline-block;
+	height:11px;
+	width:11px;
+	border-radius:50%;
+	
+}
+
+.active {
+	background:#0f0;
+}
+/*设置父元素font-size:0px来消除行间距，这是一个特别重要的秘诀*/
+.rgpic {
+	font-size: 0px;
+}
+
+/* 5.foods 设置外高335 上25 内宽1200高335 居中*/
+.foods {
+	height:335px;
+	margin-top:25px;
+}
+
+.foodson {
+	width:1200px;
+	height:335px;
+	margin:0 auto;
+}
+/* 上面文字 */
+.fhead {
+	width:1200px;
+	height:29px;
+	border-bottom:2px solid #0f0;
+}
+/* a 海鲜水产 16px margin-right:20px; */
+a.fish {
+	float:left;
+	height:29px;
+	line-height:29px;
+	font-size:16px;
+	margin-right:20px;
+	font-size:20px;
+	color:#0f0;
+}
+/* li标签 高29 左10 */
+.fishList li {
+	float:left;
+	height:29px;
+	line-height:29px;
+	margin-right:10px;
+}
+/* 更多设置 高20 */
+.more {
+	float:right;
+	height:20px;
+	line-height:20px;
+}
+/* 5.2左侧广告 宽200 高300 有问题找浮动 */
+.shrimp {
+	width:1200px;
+	height:300px;
+	font-size:0px;
+}
+
+.shrimp a {
+	float:left;
+	width:200px;
+	height:300px;
+}
+/* 5.3右侧列表产品 宽1000 高300*/
+.jiwei {
+	float:left;
+	width:1000px;
+	height:300px;
+	overflow:hidden;
+}
+/* overflow: hidden; */
+
+/* 列表设置 宽249 高299 边框下右 居中 */
+.jiwei li{
+width:249px;
+height: 299px;
+border-bottom: 1px solid #666666;
+border-right: 1px solid #666666;
+text-align: center;
+float:left;
+}
+
+.jiwei li a {
+	display: block;
+}
+
+/* 基围虾设置 字14 高50 下10 */
+.jiwei h5{
+font-size:14px;
+height: 50px;
+line-height: 50px;
+margin-bottom: 10px;
+}
+/* 39.9设置 字20 红加粗 高35 上17 */
+.jiwei li div{
+font-size:20px;
+color:red;
+font-weight: bold;
+height: 35px;
+line-height: 35px;
+margin-top:17px;
+}
